@@ -20,7 +20,7 @@ export default function ModelViewer() {
       <directionalLight position={[10, 10, 5]} intensity={1.5} />
       <Suspense fallback={null}>
         <Model />
-        <Environment preset="sunset" />
+        <Environment background={false} />
       </Suspense>
       <OrbitControls />
     </Canvas>
