@@ -14,7 +14,9 @@ function Model() {
 export default function ModelViewer() {
   return (
     <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+      {/* @ts-ignore */}
       <ambientLight intensity={0.4} />
+      {/* @ts-ignore */}
       <directionalLight position={[10, 10, 5]} intensity={1.5} />
       <Suspense fallback={null}>
         <Model />
