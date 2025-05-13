@@ -1,6 +1,6 @@
 /// <reference types="@react-three/fiber" />
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Environment } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import { Suspense } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { useLoader } from '@react-three/fiber'
@@ -20,7 +20,6 @@ export default function ModelViewer() {
       <directionalLight position={[10, 10, 5]} intensity={1.5} />
       <Suspense fallback={null}>
         <Model />
-        <Environment background={false} />
       </Suspense>
       <OrbitControls />
     </Canvas>
