@@ -6,7 +6,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { useLoader } from '@react-three/fiber'
 
 function Model() {
-  const gltf = useLoader(GLTFLoader, '/models/SikuSphere3D.glb')
+  const gltf = useLoader(GLTFLoader, '/models/SikuSphere3D_v2.glb')
   // @ts-ignore
   return <primitive object={gltf.scene} scale={1.5} />
 }
